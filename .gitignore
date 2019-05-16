@@ -3,6 +3,7 @@ emotionrec/shape_predictor_68_face_landmarks.dat
 fer2013
 KDEF
 *.csv
+*.zip
 badtrainingdata.txt
 __pycache__
 extract-faces
