@@ -1,6 +1,7 @@
 .DS_Store
 emotionrec/shape_predictor_68_face_landmarks.dat
-datasets
+fer2013
+KDEF
 *.csv
 badtrainingdata.txt
 __pycache__
