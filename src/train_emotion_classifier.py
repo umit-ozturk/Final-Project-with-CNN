@@ -1,12 +1,10 @@
 from keras.callbacks import CSVLogger, ModelCheckpoint, EarlyStopping
 from keras.callbacks import ReduceLROnPlateau
 from keras.preprocessing.image import ImageDataGenerator
-from keras.models import load_model
 
 from models.cnn import big_XCEPTION
-from utils.datasets import DataManager
-from utils.datasets import split_data
-from utils.preprocessor import preprocess_input
+from utils.datasets import DataManager, preprocess_input, split_data
+
 
 # parameters
 batch_size = 32

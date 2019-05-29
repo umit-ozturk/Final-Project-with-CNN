@@ -4,9 +4,8 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras.models import load_model
 
 from models.cnn import big_XCEPTION
-from utils.datasets import DataManager
-from utils.datasets import split_data
-from utils.preprocessor import preprocess_input
+from utils.datasets import DataManager, split_data, preprocess_input
+
 
 # parameters
 batch_size = 32
@@ -35,7 +34,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy',
 model.summary()
 
 
-datasets = ['fer2013']
+datasets = ['KDEF']
 for dataset_name in datasets:
     print('Training dataset:', dataset_name)
 
@@ -60,8 +59,9 @@ for dataset_name in datasets:
     train_faces, train_emotions = train_data
 
 
-    #choose model to retrain
-    model = load_model('../trained_models/emotion_models/path_you_choose.hdf5')
+    # choose model to retrain
+
+    model = load_model('../trained_models/emotion_models/fer2013_XCEPTION.54-0.66.hdf5')
 
     model.fit_generator(data_generator.flow(train_faces, train_emotions,
                                             batch_size),
