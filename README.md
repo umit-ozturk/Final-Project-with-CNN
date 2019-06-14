@@ -5,6 +5,8 @@
 
 We created Real-time emotion recognition application with Yusuf Alper Sarı.
 
+In this study; a CNN model is trained to be used in real-time emotion recognition. The model was created using the dataset FER2013 and then fine tuned with KDEF dataset. Tests were made on the last version of the model and the highest performance was used in real-time emotion recognition.
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 [![Star on GitHub](https://img.shields.io/github/stars/umit-ozturk/Final-Project-with-CNN.svg?style=social)](https://github.com/umit-ozturk/Final-Project-with-CNNstargazers)
 
@@ -29,4 +31,15 @@ Clone the repository and create a virtual environment.
 
 ## Screenshots
 
-Coming Soon...
+
+
+![Photo1](docs/images/ex1.png)
+
+
+![Photo2](docs/images/ex2.png)
+
+
+![Photo3](docs/images/ex3.png)
+
+
+![Photo4](docs/images/ex4.png)
